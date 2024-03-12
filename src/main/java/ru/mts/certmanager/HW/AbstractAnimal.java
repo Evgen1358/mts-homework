@@ -2,28 +2,25 @@ package ru.mts.certmanager.HW;
 
 
 public class AbstractAnimal implements Animal{
-    protected String breed; //порода
-    protected String name; //имя
-    protected Double cost; //цена в магазине
-    protected String character; //характер
-
+    protected String brd = " *Порода: ";
+    protected String nm = " *Кличка: ";
+    protected String cst = " *Цена: ";
+    protected String chr = " *Характер: ";
     @Override
-    public void getBreed() {
+    public String getBreed(String breed) {
 
+        return breed;
     }
-
     @Override
-    public void getName() {
-
+    public String getName(String name) {
+        return name;
     }
-
     @Override
-    public void getCost() {
-
+    public Double getCost(Double cost) {
+        return cost;
     }
-
     @Override
-    public void getBCharacter() {
-
+    public String getCharacter(String character) {
+        return character;
     }
 }
